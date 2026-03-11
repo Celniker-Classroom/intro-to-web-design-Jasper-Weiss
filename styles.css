@@ -3,23 +3,23 @@ h1{
     color: white;
     text-align: center;
     padding: 20px;
-    border-bottom: 3px double white;
-    border-top: 3px double white;
     width: 800px;
     font: times new roman;
     margin: 0 auto;
+    border-bottom: 3px double white;
+    border-top: 3px double white;
     border-left: 3px double white;
     border-right: 3px double white;}
 body{
-    background-color: rgb(13, 87, 129);
-    color: rgb(48, 45, 45);
+    background-color: rgb(46, 65, 77);
+    color: rgb(255, 255, 255);
     text-align: left;
     padding: 10px;
     font: times new roman;
-    margin: 10px;}
+    margin: 0 auto;}
 
 .pics{
-    width: 400px;
+    width: 600px;
     height: 300px;
     border: 3px double white;
     margin: 10px;
