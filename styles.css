@@ -31,9 +31,10 @@ body{
     padding: 10px;
     font: times new roman;
     margin: 0 auto;}
-    
+
 a{
     color: rgb(247, 0, 255);
+    underrline: 1px solid white;
     text-decoration: none;
     font-weight: bold;}
 
