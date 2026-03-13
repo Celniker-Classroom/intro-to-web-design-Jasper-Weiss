@@ -16,7 +16,8 @@ h2{
     width: 600px;
     font: times new roman;
     margin: 0 auto;
-    border: 3px double white;}
+    border: 3px double white;
+    margin-bottom: 30px;}
 
 body{
     background-color: rgb(15, 26, 34);
@@ -31,61 +32,50 @@ a:link{
     color: rgb(247, 0, 255);
     text-decoration: underline;
     font-weight: bold;
-    text-shadow: 5px 5px 5px rgb(0, 247, 255);
-}
+    text-shadow: 5px 5px 5px rgb(0, 247, 255);}
 
 a:hover{
     color: rgb(0, 217, 255);
     border: 2px double white;
     text-decoration: none;
-    font-weight: none;
-}
+    font-weight: none;}
 
 a:visited{
     color: rgb(0, 255, 13);
     text-decoration: italic;
     font-weight: bold;
-    text-shadow: 5px 5px 5px rgb(255, 0, 0);
-}
+    text-shadow: 5px 5px 5px rgb(255, 0, 0);}
 
 a:active{
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
-    text-shadow: 5px 5px 5px rgb(0, 0, 0);
-}
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);}
 
 .section {
     overflow: auto;           
-    margin-bottom: 30px;     
-}
+    margin-bottom: 30px;}
 
 .pics{
     width: 700px;
     height: 350px;
-    border: 3px double white;
-}
+    border: 3px double white;}
 
 .left-img {
     float: left;
-    margin: 0 20px 20px 0;
-}
+    margin: 0 20px 20px 0;}
 
 .right-img {
     float: right;
-    margin: 0 0 20px 20px;
-}
+    margin: 0 0 20px 20px;}
 
 .right-text {
-    text-align: right;
-}
+    text-align: right;}
 
 #container {
     background-color: rgb(46, 65, 77);
     width:1400px;
-    max-width: 1300;
     margin: 0 auto;
-    border-left: 3px double white;
-    border-right: 3px double white;
-    padding: 20px;
-}
+    border-left: 3px double rgb(255, 255, 255);
+    border-right: 3px double rgb(255, 255, 255);
+    padding: 20px;}
