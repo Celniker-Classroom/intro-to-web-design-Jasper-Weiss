@@ -1,7 +1,7 @@
 :root {
-  --breakpoint-mobile: 576px;
-  --breakpoint-tablet: 768px;
-  --breakpoint-desktop: 1024px;
+  --breakpoint-mobile: 768px;
+  --breakpoint-tablet: 992;
+  --breakpoint-desktop: 1200px;
 }
 
 h1{
@@ -89,6 +89,34 @@ a:active{
     border-right: 3px double rgb(255, 255, 255);
     padding: 20px;}
 
+#sidebar {
+    background-color: rgb(15, 26, 34);
+    border: 2px solid white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    float: right;
+    width: 250px;
+    margin-left: 20px;
+}
+
+#sidebar h3 {
+    color: rgb(247, 0, 255);
+    text-align: center;
+    margin-top: 0;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid rgb(0, 217, 255);
+}
+
 @media (max-width: var(--breakpoint-mobile)) {
     h1 {
         width: 100%;
@@ -105,6 +133,12 @@ a:active{
     .pics {
         width: 100%;
         height: auto;
+    }
+    #sidebar {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
     }
 }
 
