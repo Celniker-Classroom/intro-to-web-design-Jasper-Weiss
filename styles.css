@@ -21,7 +21,7 @@ h2{
     color: white;
     text-align: center;
     padding: 8px;
-    max-width: 600px;
+    max-width: auto;
     width: 100%;
     font: times new roman;
     margin: 0 auto;
