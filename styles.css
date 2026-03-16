@@ -62,7 +62,9 @@ a:active{
 
 .section {
     overflow: auto;           
-    margin-bottom: 30px;}
+    margin-bottom: 30px;
+    margin-right: 290px; /* Make room for the sidebar */
+}
 
 .pics{
     width: 700px;
@@ -83,17 +85,20 @@ a:active{
 #container {
     
     background-color: rgb(46, 65, 77);
-    width:1200px;
+    width: min(1200px, 95vw); /* Responsive width up to 1200px */
     margin: 0 auto;
     border-left: 3px double rgb(255, 255, 255);
     border-right: 3px double rgb(255, 255, 255);
-    padding: 20px;}
+    padding: 20px;
+    overflow: auto;
+}
 
 #sidebar {
     background-color: rgb(15, 26, 34);
     border: 2px solid white;
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
     border-radius: 5px;
     float: right;
     width: 250px;
@@ -140,6 +145,9 @@ a:active{
         margin-left: 0;
         margin-bottom: 20px;
     }
+    .section {
+        margin-right: 0; /* Remove right margin on mobile */
+    }
 }
 
 @media (max-width: var(--breakpoint-tablet)) {
@@ -155,6 +163,13 @@ a:active{
     .pics {
         width: 90%;
     }
+    #sidebar {
+        width: 200px;
+        margin-left: 15px;
+    }
+    .section {
+        margin-right: 240px; /* Adjusted for smaller sidebar */
+    }
 }
 
 @media (max-width: var(--breakpoint-desktop)) {
@@ -162,6 +177,27 @@ a:active{
         width: 95%;
     }
     #container {
-        width: 1100px;
+        width: min(1100px, 95%);
+    }
+    .section {
+        margin-right: 290px; /* Maintain sidebar space */
+    }
+    #sidebar {
+        width: 250px;
+        margin-left: 20px;
+    }
+}
+
+/* Large desktop screens */
+@media (min-width: 1201px) {
+    #container {
+        width: 1200px;
+    }
+    .section {
+        margin-right: 310px; /* Adjusted for wider sidebar */
+    }
+    #sidebar {
+        width: 280px; /* Slightly wider sidebar for large screens */
+        margin-left: 20px;
     }
 }
