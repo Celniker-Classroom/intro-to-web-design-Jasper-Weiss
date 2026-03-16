@@ -34,7 +34,7 @@ body{
     font: times new roman;
     width: fit-content;
     margin: 0 auto;
-    line-height: 3;}
+    line-height: 1.5;}
 
 a:link{
     color: rgb(247, 0, 255);
@@ -63,7 +63,6 @@ a:active{
 .section {
     overflow: auto;           
     margin-bottom: 30px;
-    margin-right: 290px; /* Make room for the sidebar */
 }
 
 .pics{
@@ -85,24 +84,24 @@ a:active{
 #container {
     
     background-color: rgb(46, 65, 77);
-    width: min(1200px, 95vw); /* Responsive width up to 1200px */
+    width: min(1200px, 95vw);
     margin: 0 auto;
     border-left: 3px double rgb(255, 255, 255);
     border-right: 3px double rgb(255, 255, 255);
     padding: 20px;
     overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    align-items: start;
 }
 
 #sidebar {
     background-color: rgb(15, 26, 34);
     border: 2px solid white;
     padding: 15px;
-    margin-top: 0;
-    margin-bottom: 20px;
     border-radius: 5px;
-    float: right;
-    width: 250px;
-    margin-left: 20px;
+    height: fit-content;
 }
 
 #sidebar h3 {
@@ -134,19 +133,15 @@ a:active{
     #container {
         width: 100%;
         padding: 10px;
+        display: block;
     }
     .pics {
         width: 100%;
         height: auto;
     }
     #sidebar {
-        float: none;
         width: 100%;
-        margin-left: 0;
         margin-bottom: 20px;
-    }
-    .section {
-        margin-right: 0; /* Remove right margin on mobile */
     }
 }
 
@@ -159,16 +154,11 @@ a:active{
     }
     #container {
         width: 95%;
+        grid-template-columns: 1fr 250px;
+        gap: 15px;
     }
     .pics {
         width: 90%;
-    }
-    #sidebar {
-        width: 200px;
-        margin-left: 15px;
-    }
-    .section {
-        margin-right: 240px; /* Adjusted for smaller sidebar */
     }
 }
 
@@ -178,26 +168,15 @@ a:active{
     }
     #container {
         width: min(1100px, 95%);
-    }
-    .section {
-        margin-right: 290px; /* Maintain sidebar space */
-    }
-    #sidebar {
-        width: 250px;
-        margin-left: 20px;
+        grid-template-columns: 1fr 280px;
+        gap: 20px;
     }
 }
 
-/* Large desktop screens */
 @media (min-width: 1201px) {
     #container {
         width: 1200px;
-    }
-    .section {
-        margin-right: 310px; /* Adjusted for wider sidebar */
-    }
-    #sidebar {
-        width: 280px; /* Slightly wider sidebar for large screens */
-        margin-left: 20px;
+        grid-template-columns: 1fr 320px;
+        gap: 20px;
     }
 }
